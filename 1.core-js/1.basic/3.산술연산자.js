@@ -24,3 +24,7 @@ z = z+1;
 z -= 8;
 z *= 10;
 console.log(`z : ${z}`);
+
+
+const str = 'hello' * 5.5;
+console.log(`str : ${str}`);
