@@ -16,6 +16,7 @@ let index = foodList.indexOf(findTarget);
 
 console.log(`찾은 인덱스 : ${index}`);
 
+
 // includes() : 배열의 특정 요소가 존재하는지 논리여부 확인
 let isPresent = foodList.includes('닭코치');
 console.log(`존재여뷔${isPresent}`);
