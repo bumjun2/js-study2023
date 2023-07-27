@@ -74,3 +74,5 @@ console.log(foodList);
 // foodList.splice(0);
 foodList = [];
 console.log(foodList);
+
+console.log(typeof foodList);
