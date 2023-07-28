@@ -31,14 +31,14 @@ console.log(`약수의 개수: ${divCount}개`);
      반환하는 함수 calcNumbersTotalAndAverage를 작성하세요.
 */
 function calcNumbersTotalAndAverage(...number){
-    let sum = 0;
+    let total = 0;
     for(let n of number){
-        sum += n;
+        total += n;
     }
-    let s = sum / 4;
+    let avg = total / 4;
     return{
-        total : sum,
-        avg : s,
+        total,
+        avg
     }
 }
 
