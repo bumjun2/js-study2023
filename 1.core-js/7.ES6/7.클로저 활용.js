@@ -57,6 +57,3 @@ console.log(increase());
 console.log(increase());
 console.log(increase());
 console.log(increase());
-
-
-
