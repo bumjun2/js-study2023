@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="fruits">
+        <li>사과</li>
+        <li>바나나</li>
+        <li>포도</li>
+    </ul>
+
+
+    <script>
+        const $fruits = document.getElementById('fruits');
+
+        const [$apple, $banana, $grap] = [...$fruits.children];
+
+        const $newDiv = document.createElement('div');
+        $newDiv.textContent = '박스';
+
+
+        // 자식노드 교체 (new, old)
+        $fruits.replaceChild($newDiv, $banana);
+
+        // 자식노드삭제
+        $fruits.removeChild($apple);
+
+        $fruits.innerHTML = '';
+    </script>
+</body>
+</html>
