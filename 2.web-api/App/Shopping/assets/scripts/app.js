@@ -15,14 +15,33 @@ const p1 = new Product(
   2000,
   "냠냠박사님 맛있게 밥을 먹어주세요~"
 );
-console.log(p1);
+// console.log(p1);
 const p2 = new Product(
   "쩝쩝이",
   "https://www.animaxtv.co.kr/sites/animaxtv.co.kr/files/ct_character_f_primary_image/nyamnyam.jpg",
   7000,
   "쩝쩝꿀꿀박사님 점심을 추천해주세요~"
 );
-console.log(p2);
+// console.log(p2);
+
+
+// 화면 가장 상단부에 들어갈 장바구니 총액 정보 태그 생성 클래스
+class ShoppingCart {
+  constructor() {
+    // 장바구니에 담은 Product들을 저장
+    this.cartItems = [];
+  }
+
+  render() {
+    const $cart = document.createElement('section');
+    $cart.classList.add('cart');
+    $cart.innerHTML = `
+      <h2>총액 0원</h2>
+      <button>주문하기</button>
+    `;
+    return $cart;
+  }
+}
 
 
 // 한개의 LI태그를 생성하는 컴포넌트 클래스 설계
@@ -32,11 +51,10 @@ class ProductItem {
   }
 
   // 담기버튼 클릭이벤트 핸들러
-  addToCartHanler(){
-    console.log('장바구니에 상품을 추가함');
-    // 이 핸들러에서 누른 그 상품에 정보를 알아야 한다.
-    console.log(this);
-
+  addToCartHandler() {
+    console.log('장바구니에 상품을 추가함!');
+    // 이 핸들러에서 누른 그 상품의 정보를 알아야 한다.
+    console.log(this.product);
   }
 
   render() {
@@ -53,12 +71,10 @@ class ProductItem {
           </div>
         </div>
       `;
-
-      const $addCartBtn = $prod.querySelector('button');
-      // $addCartBtn.addEventListener('click', this.addToCartHanler.bind(this));
-      $addCartBtn.addEventListener('click', this.addToCartHanler.bind(this));
-      // return $prod;
-      return $prod;
+    const $addCartBtn = $prod.querySelector('button');
+    // $addCartBtn.addEventListener('click', this.addToCartHandler.bind(this));
+    $addCartBtn.addEventListener('click', () => this.addToCartHandler());
+    return $prod;
   }
 }
 
@@ -87,12 +103,11 @@ class ProductList {
         60000,
         "맛있는 맹고~ 당장 사먹어야지~"
       ),
-    ]
+    ];
   } // end constructor
 
   render() {
     // console.log('render!!', this);
-    const $app = document.getElementById("app");
     const $prodList = document.createElement("ul");
     $prodList.classList.add("product-list");
     this.products.forEach((prod) => {
@@ -100,11 +115,23 @@ class ProductList {
       // console.log(productItem);
       $prodList.appendChild(productItem.render());
     });
-    $app.appendChild($prodList);
+    return $prodList;
   }
 }
 
+// ShoppingCart와 ProductList를 합쳐서 렌더링처리하는 클래스
+class Shop {
+  constructor() {
+    this.render();
+  }
+
+  render() {
+    const $app = document.getElementById('app');
+    $app.appendChild(new ShoppingCart().render());
+    $app.appendChild(new ProductList().render());
+  }
+}
 
 // 렌더링 명령
-const productList = new ProductList();
-productList.render();
+new Shop();
+
