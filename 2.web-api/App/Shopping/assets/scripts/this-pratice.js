@@ -79,3 +79,4 @@ const $input = document.querySelector('input');
 
 // document.getElementById('btn').addEventListener('click', eventHandler.bind($input));
 document.getElementById('btn').addEventListener('click', eventHandler.bind(null, '사과'));
+
