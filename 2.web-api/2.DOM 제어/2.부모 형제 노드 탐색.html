@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul id="fruits">
+        <li class="fr apple">사과</li>
+        <li class="fr banana">바나난</li>
+        <li class="fr grap">포도</li>
+      </ul>
+    </div>
+
+    <script>
+      const $fruits = document.getElementById("fruits");
+
+      // warp지목
+      const $wrap = $fruits.parentElement;
+
+      // li지목
+      const [$apple, $banana, $grap] = [...$wrap.firstElementChild.children];
+
+      const $sameFlag = $banana.previousElementSibling === $apple;
+
+      console.log($sameFlag);
+      
+      // closest('css 선텍자') : 가까운 태그를 탐색
+      const $found = $grap.closest('.warp');
+      console.log($found);
+
+      const a = $grap.querySelector('a');
+      console.log(a);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ci{
+            border-radius: 50%;
+        }
+
+        .blue{
+            background: blue;
+        }
+        .green{
+            background: green;
+        }
+        .orange{
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button id="add">눌르면 색깔 변경</button>
+
+    <script>
+        const $box = document.querySelector('.box');
+        document.getElementById('add').onclick = e =>{
+            function aa(){
+                if(random === 1){
+                    $box.classList.add('blue');
+                }
+                if(random === 2){
+                    $box.classList.add('green');
+                }
+                else{
+                    $box.classList.add('orange', 'ci');
+                }                
+            }
+            for(let i=1; i<=3; i++){
+                
+                 
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

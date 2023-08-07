@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="users">
+        <li data-user-number="4321" data-role="common">루이스 수아레즈</li>
+        <li data-user-number="9999" data-role="admin">크리스티아누 호날두</li>
+    </ul>
+
+    <script>
+        const [$ul, $u2] = [...document.querySelectorAll('.users li')];
+
+        // const pororNumber = +$u1.dataset.userNumber;
+        // console.log(pororNumber);
+
+        const pinguRole = $u2.dataset.role;
+        console.log(pinguRole);
+
+        // $u1.dataset.role = 'gold';
+        // $u1.dataset.phoneNumber = '010-3813023890'
+
+        delete $u1.dataset.userNumver;
+    </script>
+</body>
+</html>
