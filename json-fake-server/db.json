@@ -1,21 +1,21 @@
 {
   "posts": [
     {
-      "title": "ㅋㅋ",
-      "body": "ㅋㅋ",
-      "id": 2
-    },
-    {
       "title": "ㅎㅎ",
       "body": "ㅎㅎ",
       "id": 3
-    }
-  ],
-  "users":[
+    },
     {
-      "id" : 1,
-      "userName" : "김철수"
+      "title": "zz",
+      "body": "zz",
+      "id": 4
     }
   ],
-  "followers":[]
+  "users": [
+    {
+      "id": 1,
+      "userName": "김철수"
+    }
+  ],
+  "followers": []
 }
