@@ -1,3 +1,29 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "title": "ㅋㅋ",
+      "body": "ㅋㅋ",
+      "id": 2
+    },
+    {
+      "title": "ㅎㅎ",
+      "body": "ㅎㅎ",
+      "id": 3
+    },
+    {
+      "title": "f",
+      "body": "f",
+      "id": 4
+    },
+    {
+      "title": "f",
+      "body": "f",
+      "id": 5
+    },
+    {
+      "title": "f",
+      "body": "f",
+      "id": 6
+    }
+  ]
 }

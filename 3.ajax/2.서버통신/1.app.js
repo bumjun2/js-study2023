@@ -6,6 +6,8 @@ const $postUl = document.querySelector('.posts');
 const $addForm = document.querySelector('#new-post form');
 console.log($addForm);
 
+
+
 //서버에서 게시물을 가져와서 화면에 렌더링
 const fetchGetPosts = () =>{
     
