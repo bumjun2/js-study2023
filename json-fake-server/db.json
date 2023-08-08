@@ -9,21 +9,13 @@
       "title": "ㅎㅎ",
       "body": "ㅎㅎ",
       "id": 3
-    },
-    {
-      "title": "f",
-      "body": "f",
-      "id": 4
-    },
-    {
-      "title": "f",
-      "body": "f",
-      "id": 5
-    },
-    {
-      "title": "f",
-      "body": "f",
-      "id": 6
     }
-  ]
+  ],
+  "users":[
+    {
+      "id" : 1,
+      "userName" : "김철수"
+    }
+  ],
+  "followers":[]
 }
