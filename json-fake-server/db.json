@@ -20,28 +20,14 @@
   "followers": [],
   "todes": [
     {
-      "text": "저녁 요리하기",
+      "text": "자바스크립트",
       "done": false,
-      "id": 1
-    },
-    {
-      "text": "뉴스 기사 보기",
-      "done": true,
       "id": 2
     },
     {
-      "text": "자바스크립트 공부하기",
+      "text": "호날두",
       "done": false,
       "id": 3
-    },
-    {
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
     }
   ]
 }
