@@ -107,6 +107,37 @@ const checkTodoHandler = e =>{
 $todoList.addEventListener('change', checkTodoHandler);
 
 
+// step5. 수정하기
+
+
+$todoList.addEventListener('click', e =>{
+  if(!e.target.matches('.modify span')) return;
+
+  const $span = e.target.closest('.todo-list-item').querySelector('.checkbox').lastElementChild;
+  
+  const $input = document.createElement('input');
+  $input.classList.add('modify-input');
+
+  const $checkbox = e.target.closest('.todo-list-item').firstElementChild;
+  $checkbox.replaceChild($input, $span);
+
+  const $btn = e.target.closest('.modify');
+  $btn.classList.add('red');
+
+  const id = e.target.closest('.todo-list-item').dataset.id;
+  $btn.addEventListener('click', e=>{
+    if($input.value){
+      const payload = {
+        text : $input.value
+      };
+      fetchTodos(`${URL}/${id}`, 'PATCH', payload);
+   }else{
+     
+   }
+  })
+});
+
+
 // =========== 앱 실행 =========== //
 const init = () => {
   fetchTodos(URL)

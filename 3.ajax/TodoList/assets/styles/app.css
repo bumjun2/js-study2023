@@ -128,6 +128,11 @@ section.todo-template .content .todo-list .todo-list-item .modify {
     color: green;
     margin-right: 10px;    
 }
+
+section.todo-template .content .todo-list .todo-list-item .red  {    
+    color: red;
+    margin-right: 10px;    
+}
 section.todo-template .content .todo-list .todo-list-item .remove {  
     color: red;    
 }

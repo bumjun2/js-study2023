@@ -20,14 +20,19 @@
   "followers": [],
   "todes": [
     {
-      "text": "자바스크립트",
+      "text": "qq",
       "done": false,
       "id": 2
     },
     {
-      "text": "호날두",
+      "text": "ee",
       "done": false,
       "id": 3
+    },
+    {
+      "text": "zz",
+      "done": false,
+      "id": 4
     }
   ]
 }
