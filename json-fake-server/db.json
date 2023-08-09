@@ -2,7 +2,7 @@
   "posts": [
     {
       "title": "ㅎㅎ",
-      "body": "ㅎㅎ",
+      "body": "zzzzzzz수정수정333ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
       "id": 3
     },
     {
@@ -17,5 +17,22 @@
       "userName": "김철수"
     }
   ],
-  "followers": []
+  "followers": [],
+  "todes": [
+    {
+      "text": "저녁 요리하기",
+      "done": false,
+      "id": 1
+    },
+    {
+      "text": "뉴스 기사 보기",
+      "done": true,
+      "id": 2
+    },
+    {
+      "text": "자바스크립트 공부하기",
+      "done": false,
+      "id": 3
+    }
+  ]
 }

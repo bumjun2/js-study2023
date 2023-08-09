@@ -41,7 +41,7 @@ $addForm.addEventListener("submit", (e) => {
     },
     body: JSON.stringify(payload),
   }).then((res) => {
-    if (res.status === 200 || res.status === 201) {
+    if (res === 200 || res === 204) {
       alert("등록 성공!");
     } else {
       alert("등록 실패!");
