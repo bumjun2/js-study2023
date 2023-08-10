@@ -5,8 +5,8 @@ export const clickHandler = e =>{
 };
 
 export default class{
-    constructor(name, age){
-        this.name = name;
+    constructor(name, age){         
+        this.name = names;
         this.age = age;
     }
     info(){
