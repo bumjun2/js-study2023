@@ -18,5 +18,11 @@
     }
   ],
   "followers": [],
-  "todes": []
+  "todes": [
+    {
+      "text": "아침에",
+      "done": true,
+      "id": 1
+    }
+  ]
 }
