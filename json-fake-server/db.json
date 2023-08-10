@@ -18,21 +18,5 @@
     }
   ],
   "followers": [],
-  "todes": [
-    {
-      "text": "qq",
-      "done": false,
-      "id": 2
-    },
-    {
-      "text": "ee",
-      "done": false,
-      "id": 3
-    },
-    {
-      "text": "zz",
-      "done": false,
-      "id": 4
-    }
-  ]
+  "todes": []
 }
