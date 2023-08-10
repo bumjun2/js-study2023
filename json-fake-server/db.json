@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "title": "ㅎㅎ",
+      "body": "zzzzzzz수정수정333ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
+      "id": 3
+    },
+    {
+      "title": "zz",
+      "body": "zz",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "userName": "김철수"
+    }
+  ],
+  "followers": [],
+  "todes": [
+    {
+      "text": "아침에",
+      "done": true,
+      "id": 1
+    }
+  ]
+}
